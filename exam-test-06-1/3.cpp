@@ -5,20 +5,22 @@ using namespace std;
 class MyClass
 {
 public:
-  MyClass():count(0) { cout<<"This object is "; }
-// ERROR  ********found********
-  void Inc() const
-  { cout<<"no. "<<++count<<endl; }
+  MyClass() : count(0) { cout << "This object is "; }
+  // ERROR  ********found********
+  void Inc()
+  {
+    cout << "no. " << ++count << endl;
+  }
+
 private:
-// ERROR  ********found********
-  int count=0;
+  // ERROR  ********found********
+  int count;
 };
 
 int main()
 {
-  MyClass *obj=new MyClass;
-// ERROR  ********found********
-  *obj.Inc();
+  MyClass *obj = new MyClass;
+  // ERROR  ********found********
+  obj->Inc();
   return 0;
 }
-
