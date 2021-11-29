@@ -47,6 +47,7 @@ private:
 	int d;
 };
 
+
 //静态成员变量都要在类外初始化
 int Myclass::a = 0;
 int Myclass::b = 0;
@@ -54,8 +55,11 @@ int Myclass::b = 0;
 void test01(){
 	//静态成员函数的调用
 	// 1、通过对象调用
-	Myclass c;
-	c.StaticFun();
+	// Myclass c;
+	// c.StaticFun();
+	// 2、通过类名访问
+
+	Myclass::StaticFun();
 }
 
 void test1()
