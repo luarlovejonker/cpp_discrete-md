@@ -4,6 +4,7 @@
         "*.cjson": "jsonc",
         "*.wxss": "css",
         "*.wxs": "javascript",
-        "istream": "cpp"
+        "istream": "cpp",
+        "iostream": "cpp"
     }
 }
