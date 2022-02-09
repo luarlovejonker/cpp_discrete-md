@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 using namespace std;
 
@@ -9,6 +10,6 @@ int main() {
 
   cout.width(5);
   cout << "$" << endl;
-  cout << x << endl;
+  cout << setprecision(4) << x << endl;
   return 0;
 }
