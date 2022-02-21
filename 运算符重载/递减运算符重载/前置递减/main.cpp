@@ -40,7 +40,7 @@ ostream &operator<<(ostream &out, MyInteger myint)
 }
 
 //前置++ 先++ 再返回
-void test01()
+void test()
 {
   MyInteger myInt;
   cout << ++myInt << endl;
@@ -59,7 +59,7 @@ void test02()
 int main()
 {
 
-  test01();
+  test();
   // test02();
 
   system("pause");

@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-void test01()
+void test()
 {
   ifstream ifs;
   ifs.open("a.txt", ios::in);
@@ -46,7 +46,7 @@ void test01()
 int main()
 {
 
-  test01();
+  test();
 
   system("pause");
 
