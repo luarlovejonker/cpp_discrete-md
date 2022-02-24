@@ -8,18 +8,19 @@ int main()
 {
   char id[11], name[21];
   int score;
-  ifstream inFile;
-  inFile.open("score.txt", ios::in);
-  if (!inFile)
+  ofstream outFile;
+  outFile.open("score.txt", ios::out);
+  if (!outFile)
   {
     cout << "open file failed" << endl;
     return 0;
   }
   cout << "num name score" << endl;
-  while (inFile >> id >> name >> score)
+  while (cin >> id >> name >> score)
   { 
-    cout << left << setw(10) << id << " " << setw(20) << name << " " << setw(3) << score << endl;
-    inFile.close();
+    outFile << id << " " << name << " " << score;
+    // cout << left << setw(10) << id << " " << setw(20) << name << " " << setw(3) << score << endl;
+    outFile.close();
   }
   return 0;
 }
