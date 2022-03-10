@@ -3,6 +3,8 @@
 #include <iomanip>
 using namespace std;
 
+/*以写方式打开文件并写入*/
+
 
 int main()
 {
