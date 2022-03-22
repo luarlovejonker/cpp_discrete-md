@@ -1,5 +1,7 @@
 #include <iostream>
+using namespace std;
 
+// https://juejin.cn/post/6844904014073561095
 
 class MyInteger
 {
@@ -10,21 +12,21 @@ public:
   MyInteger()
   {
     m_Num = 0;
-  }
-  //前置++
+  };
+  ////
   MyInteger &operator++()
   {
-    //先++
+    ////
     m_Num++;
-    //再返回
+    ////
     return *this;
   }
 
-  //后置++
+  ////
   MyInteger operator++(int)
   {
-    //先返回
-    MyInteger temp = *this; //记录当前本身的值，然后让本身的值加1，但是返回的是以前的值，达到先返回后++；
+    ////
+    MyInteger temp = *this; ////
     m_Num++;
     return temp;
   }
@@ -39,7 +41,7 @@ ostream &operator<<(ostream &out, MyInteger myint)
   return out;
 }
 
-//前置++ 先++ 再返回
+////
 void test()
 {
   MyInteger myInt;
@@ -47,7 +49,7 @@ void test()
   cout << myInt << endl;
 }
 
-//后置++ 先返回 再++
+////
 void test02()
 {
 
