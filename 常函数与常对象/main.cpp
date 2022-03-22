@@ -38,7 +38,7 @@ public:
 void test01()
 {
 
-  const Person person; //常量对象
+  const Person person; //常对象
   cout << person.m_B << endl;
   person.MyFunc();
   cout << person.m_B << endl;
