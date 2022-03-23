@@ -7,31 +7,23 @@ using namespace std;
 int main()
 {
   // called stream's constructor func(..)
-  //  ifstream txtFile("1.txt"); //default open use in mode
-  //  string temp;
-  //  if (txtFile)
-  //  {
-  //    //iterate txtFile
-  //    while (getline (txtFile, temp))
-  //    {
-  //      /* code */
-  //      cout << temp << endl;
-  //    }
-  //  }
-  //  else
-  //  {
-  //    cout << "error in open file" << endl;
-  //  }
-  ifstream txtFile("1.txt");
-  char cn;
-
-  if (txtFile)
-  {
-    while ((cn = txtFile.get() != EOF))
+    ifstream txtFile("1.txt"); //default open use in mode
+    string temp;
+    if (txtFile)
     {
-      /* code */
+      //iterate txtFile
+      while (getline(txtFile, temp))
+      {
+        /* code */
+        cout << temp << endl;
+      }
     }
-  }
+    else
+    {
+      cout << "error in open file" << endl;
+    }
+/////////////////////////
+
 
   return 0;
 }
