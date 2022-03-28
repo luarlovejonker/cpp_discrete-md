@@ -1,21 +1,33 @@
 #include <iostream>
 using namespace std;
 
-//使用函数模板求一个数组各个元素的积
-template <class Type>
-Type Mul(Type a[], int n)
+class A
 {
-  Type t = 1;
-  for (int i = 0; i < n; i++)
-  {
-    t *= a[i];
-  }
-  return t;
+  public:
+    A()
+    {
+      cout << "learn constructor function" << endl;
+    }
+    ~A(){
+      cout << "类的对象进阶" endl;
+    }
+};
+
+class B: A {
+  public: 
+    B(int i){
+      cout << i << "年" << endl;
+    };
+    ~B() {
+      cout << "第3章";
+    }
 };
 
 int main()
 {
-  int a[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-  cout << Mul<int>(a, 9) << endl;
+  B obj(2020);
   return 0;
 }
+//学习构造函数于
+// 2020年
+// 第3章类的对象进阶
