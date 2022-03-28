@@ -57,7 +57,7 @@
     - 反自反
       - ![](./Charpter5.assets/2022-03-20-17-40-48.png)
 
-  - 常见关系的性质./Charpter5.assets/
+  - 常见关系的性质
 
     - ![](./Charpter5.assets/2022-03-20-17-19-08.png)
 
