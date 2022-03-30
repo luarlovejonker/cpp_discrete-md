@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 
 class A
@@ -9,7 +9,7 @@ class A
       cout << "learn constructor function" << endl;
     }
     ~A(){
-      cout << "类的对象进阶" endl;
+      cout << "类的对象进阶" << endl;
     }
 };
 
