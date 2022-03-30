@@ -2,6 +2,10 @@
 
 [离散数学系列文章汇总](https://memcpy0.blog.csdn.net/article/details/119997004?spm=1001.2014.3001.5502)
 
+#### 逻辑等价式和重言蕴含式
+
+[逻辑等价式和重言蕴含式](https://memcpy0.blog.csdn.net/article/details/120175933)
+
 #### A命题符号化及联结词
 
 ##### 命题简介
