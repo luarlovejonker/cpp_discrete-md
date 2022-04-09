@@ -1,31 +1,24 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 using namespace std;
 
 int main()
 {
-
-  // ifstream inFile("c:\\temp\\test.txt", ios::in);
-  // if (inFile)
-  // {
-  //   cout << "success open c:\\temp\\test.txt" << endl;
-  //   inFile.close();
-  // }
-  // else
-  // {
-  //   cout << "unsuccess open c:\\temp\\test.txt" << endl;
-  // }
-
-  ofstream outFile("test1.txt", ios::out);
-  if (!outFile)
+  ifstream fin;                     //声明一个ifstream对象
+  fin.open("address.txt", ios::in); //用这个对象open一个文件（ios::in方式）
+  if (!fin.is_open())
   {
-    cout << "error" << endl;
+    cout << "Can't find this file!" << endl;
   }
   else
   {
-    cout << "success open：test1.txt" << endl;
-    outFile.close();
+    string buff;
+    while (getline(fin, buff))
+    {
+      cout << buff << endl;
+    }
+    fin.close();
   }
-
   return 0;
 }
