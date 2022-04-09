@@ -23,7 +23,7 @@ public:
     cout << 4 << "";
   };
 };
-// 11233444
+// 1 1 2 2 3 3
 int main()
 {
   MyClass obj1(1), obj2(2), obj3(obj1);
