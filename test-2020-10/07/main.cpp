@@ -12,8 +12,11 @@ public:
   Birthday()
   {
     cout << "Birthday constructor" << endl;
+  };
+  ~Birthday()
+  {
+    cout << "Birthday class 's disconstruct" << endl;
   }
-  ~Birthday() {}
 };
 
 class Test
@@ -24,11 +27,24 @@ private:
 public:
   Test(/* args */) { 
     cout << 0 << endl;
+  };
+  ~Test()
+  {
+    cout << "Test class 's disconstruct" << endl;
   }
-  ~Test() {}
+};
 
+void preTest01()
+{
+  Test *testObj = new Test();
+  delete testObj;
 };
 
 int main(){
-  Test t1;
-}
+  preTest01();
+  return 0;
+};
+
+/**
+ * 一个封闭类中初始化构造函数时，先执行此封闭类中的对象成员的构造函数再执行此封闭类自己的构造函数，析构则相反。
+ * /
