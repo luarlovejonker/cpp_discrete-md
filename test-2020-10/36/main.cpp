@@ -10,10 +10,9 @@ class Sample
       x = i;
       y = j;
     }
-    void print(){
-      if(x!=0){
-        cout << "x=" << x;
-      }
+    void print()
+    {
+      cout << "x=" << x;
       if(y!=0){
         cout << ", y = " << y;
         cout << endl;
