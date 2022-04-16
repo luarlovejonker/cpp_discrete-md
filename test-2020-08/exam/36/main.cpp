@@ -10,7 +10,7 @@ int main()
   int id = 201902;
   string name = "ZhangMeng";
   cout.width(10);
-  cout << name << endl;
+  cout << setfill('#') << name << endl;
 
   cout << setw(10) << setfill('#') << id << endl;
 

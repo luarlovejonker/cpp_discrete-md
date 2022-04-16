@@ -12,7 +12,7 @@ int main()
   int score;
   ofstream outFile;
   outFile.open("score.txt", ios::out);
-  if (!outFile)
+  if (!outFile.is_open())
   {
     cout << "open file failed" << endl;
     return 0;
